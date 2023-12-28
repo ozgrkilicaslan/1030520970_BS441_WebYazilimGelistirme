@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+// App.js
+ 
+import { Component } from 'react';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. taş kagıt makas 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Game from './components/Game';
+ 
+class App extends Component{  
+    render(){
+      return (
+      <Game/>
+    );
+  }
 }
-
+ 
 export default App;
